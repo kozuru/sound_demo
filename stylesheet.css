@@ -1405,6 +1405,9 @@ animation:rainbow-bg 4s infinite;
   top: 0px;
   left: 0px;
   z-index: -1;
+  width:140px;
+  height:140px;
+	
 }
 
 #canvas {
