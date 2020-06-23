@@ -1574,6 +1574,9 @@ body:not(.safari) #start:hover::after {
     left:-110.9%;
     top:160px;
   }
+#soundpage{
+transform:scale(0.8);
+	}
    p img {
   top: 298px;
   left:190%;
