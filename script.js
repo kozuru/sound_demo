@@ -230,10 +230,10 @@ const go = document.getElementById("go");
 const canvas = document.getElementById("canvas");
 
 const start = document.querySelector("#start");
-//const play = document.querySelector(".play");
+
 const soundpage = document.querySelector("#soundpage");
 
-/*let safari = false;
+let safari = false;
 
 if (navigator.vendor.toLowerCase().includes("apple")) {
 	audio.hidden = false;
@@ -241,14 +241,14 @@ if (navigator.vendor.toLowerCase().includes("apple")) {
 	start.innerText = "";
 	safari = true;
 }
-*/
+
 audio.addEventListener("click", () => {
 	if (safari) {
 		TweenLite.to(soundpage, 0.25, {
 			ease: Power4.easeIn,
 			opacity: 0,
 			onComplete() {
-				//spoundpage.style.display = "none";
+				spoundpage.style.display = "none";
 			}
 		});
 		// setTimeout(() => {
