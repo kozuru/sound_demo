@@ -1518,7 +1518,7 @@ animation:rainbow-bg 4s infinite;
   bottom: 5px;
 }
 #bubbleGen1.dragging,#bubbleGen2.dragging{
-  transform: scale(1.4);
+  transform: scale(1.45);
 }
 
 .bubble {
@@ -1531,7 +1531,7 @@ animation:rainbow-bg 4s infinite;
 }
 
 .bubble.pop {
-  transform: scale(1.4);
+  transform: scale(1.45);
   border: 8px solid dodgerblue;
   background-color: transparent;
   opacity: 0;
@@ -1580,9 +1580,7 @@ animation:rainbow-bg 4s infinite;
   transform:scale(0.8);
  }
 
- .bubble-show{
-   transform: scale(0.6);
- }
+
  #bubbleGen1{
    position: absolute;
    left:-10%;
@@ -1602,8 +1600,6 @@ animation:rainbow-bg 4s infinite;
 .bubble.pop {
   transform: scale(1.0);
 }
-.bubble{
-  z-index:-0.5;
-}
+
 
 }
