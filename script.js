@@ -323,7 +323,7 @@ let analyser;
 let bufferLength;
 let dataArray;
 
-let order = [1, 2, 0];
+let order = [1, 2, 0]; /*カラー*/
 
 let nbParticles = 600;
 let fftSize = 2048;
@@ -382,7 +382,7 @@ class Circle {
 		drawCircle(
 			Math.round(this.x),
 			Math.round(this.y),
-			this.value * 0.3,/*球体のサイズ*/
+			this.value * 0.2,/*球体のサイズ*/
       //this.value * 0.1,
 			this.rgb
 		);
