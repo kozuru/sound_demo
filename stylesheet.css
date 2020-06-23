@@ -251,7 +251,7 @@ body:not(.safari) #start:hover::after {
   position: absolute;
   left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetiona 45s linear infinite;
   -webkit-animation-delay:2.0s;
@@ -349,7 +349,7 @@ body:not(.safari) #start:hover::after {
 
   left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetionb 45s linear infinite;
   -webkit-animation-delay:2.1s;
@@ -445,7 +445,7 @@ body:not(.safari) #start:hover::after {
 
    left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
 -webkit-animation: rotetionc 45s linear infinite;
   -webkit-animation-delay:2.2s;
@@ -541,7 +541,7 @@ body:not(.safari) #start:hover::after {
 
    left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetiond 45s linear infinite;
   -webkit-animation-delay:2.3s;
@@ -637,7 +637,7 @@ body:not(.safari) #start:hover::after {
 
    left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetione 45s linear infinite;
   -webkit-animation-delay:2.4s;
@@ -735,7 +735,7 @@ body:not(.safari) #start:hover::after {
 
     left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetionf 45s linear infinite;
   -webkit-animation-delay:2.5s;
@@ -833,7 +833,7 @@ body:not(.safari) #start:hover::after {
 
     left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
   -webkit-animation: rotetiong 45s linear infinite;
   -webkit-animation-delay:2.6s;
@@ -929,7 +929,7 @@ body:not(.safari) #start:hover::after {
 
     left:650px;
   top: 142px;
-  height:130px;
+  height:125px;
   width: auto;
 -webkit-animation: rotetionh 45s linear infinite;
   -webkit-animation-delay:2.7s;
