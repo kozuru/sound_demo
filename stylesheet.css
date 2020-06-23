@@ -15,7 +15,7 @@ body {
 .images{
   /*background-color:#000;*/
   position:relative;
-  left:2.7%;
+  left:2.3%;
   top:170px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -803,7 +803,7 @@ body {
   font-size:30px;*/
   position: absolute;
   top: 345px;
-  left: 44.2%;
+  left: 49.2%;
   width:90px;
   height:auto;
   -webkit-transform: translate(-50%,-50%) rotateX(70deg);
