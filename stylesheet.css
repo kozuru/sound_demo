@@ -1,22 +1,242 @@
 * {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
+
 body {
-  height: 100%;
-  width:100%;
+  height: 200px;
+  width: 200px;
+  margin: 0;
+  background: #000000;
   /* for touch screen */
   touch-action: none;
-  background-color:#000;
   overflow: hidden;
 }
+/*screen css*/
+#soundpage {
+  width: 120px;
+  height: 120px;
+  color: #ffffff;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  position: absolute;
+  font-family: "Roboto Mono", monospace;
+  /*background: #000000;*/
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  text-align: center;
+  opacity: 1;
+}
+/*#homepage h1 a {
+  color: #ffffff;
+}*/
+#soundpage h2 span {
+  cursor: pointer;
+}
+/*#homepage h1 span {
+  cursor: default;
+  opacity: 0;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+#homepage h1 a {
+  opacity: 0;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}*/
+#soundpage h2 {
+  opacity: 0;
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#content {
+  height: 200px;
+  width:auto;
+}
+
+#go {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background:#000;
+  z-index: -1;
+}
+
+#canvas {
+  position: fixed;
+  left: 35.5%;
+  top: 145px;
+  width: 28%;
+  height: 28%;
+  border: 3px solid #fffddd;
+}
+
+/* audio {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+} */
+audio {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#overlay {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 100;
+  display: -webkit-box;
+  display: flex;
+}
+
+#overlay > div {
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+#overlay > div .btn {
+  width: 50px;
+  height: 50px;
+}
+
+svg {
+  width: 90%;
+  height: 90%;
+  border-radius: 6px;
+}
+
+#overlay .time.pause .pause {
+  display: none;
+}
+
+#overlay .time:not(.pause) .play {
+  display: none;
+}
+
+body:not(.safari) #start {
+  background: #333;
+  color: ##ffbacd;
+  padding: 4px 8px;
+  /* 	border-radius:4px; */
+  position: relative;
+  border: 0.5px #333 solid;
+}
+
+body:not(.safari) #start:hover {
+  color: #ffbacd;
+  background: #333;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  top: 4px;
+  left: 4px;
+  border: 0.5px #333 solid;
+}
+
+body:not(.safari) #start::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 100%;
+  height: 100%;
+  /* 	background:red; */
+  z-index: -1;
+  border: 1px #da70d6 solid;
+}
+
+body:not(.safari) #start:hover::after {
+  content: "";
+  position: absolute;
+  top: 3.95px;
+  left: 3.95px;
+  width: 100%;
+  height: 100%;
+  /* 	background:red; */
+  z-index: -1;
+  border: 1px #da70d6 solid;
+}
+
+
+#overlay .btn {
+  position: relative;
+  background: #333;
+
+  border: #63c3e7 solid 1px;
+}
+#overlay .btn svg .shape {
+  fill: #ffbacd;
+}
+#overlay .btn:hover {
+  background: #333;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  top: 4px;
+  left: 4px;
+}
+#overlay .btn:hover svg .shape {
+  fill: #ffbacd;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+#overlay .btn:hover::after {
+  top: 3.95px;
+  left: 3.95px;
+}
+#overlay .btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 4px;
+  left: 4px;
+  border: #63c3e7 solid 1px;
+  position: absolute;
+  z-index: -1;
+}
+
+/**/
 /*rotation css*/
 .images{
   /*background-color:#000;*/
   position:relative;
-  left:2.1%;
-  top:190px;
+  left:4.05%;
+  top:30px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -803,7 +1023,7 @@ body {
   font-size:30px;*/
   position: absolute;
   top: 345px;
-  left: 49.2%;
+  left: 329.4%;
   width:90px;
   height:auto;
   -webkit-transform: translate(-50%,-50%) rotateX(70deg);
@@ -841,7 +1061,6 @@ body {
           box-shadow: 0 0 8px #fff;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
-
 #drag-container video{
   display:none;
 }
@@ -860,13 +1079,11 @@ body {
           box-shadow: 0 0 8px #fff;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
-
 #drag-container img:hover{
   -webkit-box-shadow: 0 0 15px #fffd;
           box-shadow: 0 0 15px #fffd;
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
 }
-
 #drag-container p {
   font-family: Serif;
   font-size:30px;
@@ -877,7 +1094,6 @@ body {
           transform: translate(-50%,-50%) rotateX(90deg);
   color: #fff;
 }
-
 #ground {
   width: 900px;
   height: 900px;
@@ -888,13 +1104,11 @@ body {
           transform: translate(-50%,-50%) rotateX(90deg);
   background: -webkit-radial-gradient(center center, farthest-side , #9993, transparent);
 }
-
 #music-container {
   position: absolute;
   top: 0;
   left: 0;
 }
-
 @-webkit-keyframes spin {
   from{
     -webkit-transform: rotateY(0deg);
@@ -904,7 +1118,6 @@ body {
             transform: rotateY(360deg);
   }
 }
-
 @keyframes spin {
   from{
     -webkit-transform: rotateY(0deg);
@@ -1017,8 +1230,8 @@ body {
   width: 65px;
   border-radius: 50%;
   overflow: hidden;
-  margin-top: 25px;
-  margin-left: auto;
+  margin-top: -185px;
+  margin-left: 630px;
   margin-right: auto;
   cursor: -webkit-grabbing;
   cursor: grabbing;
@@ -1297,12 +1510,12 @@ animation:rainbow-bg 4s infinite;
 #bubbleGen1{
   position: absolute;
   left: 30%;
-   bottom: 3px;
+  bottom:5px;
 }
 #bubbleGen2{
   position: absolute;
   left: 70%;
-   bottom: 3px;
+  bottom: 5px;
 }
 #bubbleGen1.dragging,#bubbleGen2.dragging{
   transform: scale(1.4);
@@ -1323,226 +1536,6 @@ animation:rainbow-bg 4s infinite;
   background-color: transparent;
   opacity: 0;
 }
-
-/*screen css*/
-#soundpage {
-  width: 120px;
-  height: 120px;
-  color: #ffffff;
-  z-index: 101;
-  top: 0;
-  left: 0;
-  position: absolute;
-  font-family: "Roboto Mono", monospace;
-  /*background: #000000;*/
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  text-align: center;
-  opacity: 1;
-}
-/*#homepage h1 a {
-  color: #ffffff;
-}*/
-#soundpage h2 span {
-  cursor: pointer;
-}
-/*#homepage h1 span {
-  cursor: default;
-  opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-#homepage h1 a {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}*/
-#soundpage h2 {
-  opacity: 0;
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-#content {
-  height: 200px;
-  width:auto;
-}
-
-#go {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -1;
-}
-
-#canvas {
-  position: fixed;
-  left: 34%;
-  top: 35px;
-  width: 26%;
-  height: 26%;
-  border: 2px solid #ff0000;
-}
-
-/* audio {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  width: 50px;
-} */
-audio {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-}
-
-#overlay {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  z-index: 100;
-  display: -webkit-box;
-  display: flex;
-}
-
-#overlay > div {
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-#overlay > div .btn {
-  width: 50px;
-  height: 50px;
-}
-
-svg {
-  width: 80%;
-  height: 80%;
-  border-radius: 4px;
-}
-
-#overlay .time.pause .pause {
-  display: none;
-}
-
-#overlay .time:not(.pause) .play {
-  display: none;
-}
-
-body:not(.safari) #start {
-  background: #ffffff;
-  color: #000;
-  padding: 4px 8px;
-  /* 	border-radius:4px; */
-  position: relative;
-  border: 2px #000 solid;
-}
-
-body:not(.safari) #start:hover {
-  color: #ffffff;
-  background: #000;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  top: 4px;
-  left: 4px;
-  border: 2px #000 solid;
-}
-
-body:not(.safari) #start::after {
-  content: "";
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  width: 100%;
-  height: 100%;
-  /* 	background:red; */
-  z-index: -1;
-  border: 2px #ffffff solid;
-}
-
-body:not(.safari) #start:hover::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  /* 	background:red; */
-  z-index: -1;
-  border: 2px #ffffff solid;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-#overlay .btn {
-  position: relative;
-  background: #fff;
-  border: #000 solid 2px;
-}
-#overlay .btn svg .shape {
-  fill: #000;
-}
-#overlay .btn:hover {
-  background: #000;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-  top: 4px;
-  left: 4px;
-}
-#overlay .btn:hover svg .shape {
-  fill: #ffffff;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-#overlay .btn:hover::after {
-  top: 0px;
-  left: 0px;
-}
-#overlay .btn::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 4px;
-  left: 4px;
-  border: #ffffff solid 2px;
-  position: absolute;
-  z-index: -1;
-}
-
 
 /*responsive*/
 @media(max-width:1000px){
@@ -1570,9 +1563,9 @@ body:not(.safari) #start:hover::after {
     left:-110.9%;
     top:160px;
   }
-#soundpage{
-transform:scale(0.8);
-	}
+  #soundpage {
+    transform:scale(0.8);
+  }
    p img {
   top: 298px;
   left:190%;
@@ -1587,6 +1580,9 @@ transform:scale(0.8);
   transform:scale(0.8);
  }
 
+ .bubble-show{
+   transform: scale(0.6);
+ }
  #bubbleGen1{
    position: absolute;
    left:-10%;
@@ -1605,6 +1601,9 @@ transform:scale(0.8);
 }
 .bubble.pop {
   transform: scale(1.0);
+}
+.bubble{
+  z-index:-0.5;
 }
 
 }
