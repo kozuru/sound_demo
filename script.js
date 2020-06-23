@@ -1,9 +1,3 @@
-/*mirror ball js*/
-function myFunction() {
-	var myButton = document.getElementById(".disco-ball");
-	myButton.textContent = "This Button Works!";
-}
-
 /*bubble js*/
 $(function(){
 const bubbleGen = document.querySelector( "#bubbleGen1" );
@@ -224,7 +218,8 @@ frame();
 });
 
 
-/*screen js */
+/*screen js*/
+$(function(){
 const audio = document.getElementById("audio");
 const go = document.getElementById("go");
 const canvas = document.getElementById("canvas");
@@ -490,4 +485,11 @@ function openFullscreen() {
 colorOverlay.addEventListener("click", function() {
 	order = _.shuffle(order);
 });
+});
 
+/**/
+/*mirror ball js*/
+function myFunction() {
+	var myButton = document.getElementById(".disco-ball");
+	myButton.textContent = "This Button Works!";
+}
