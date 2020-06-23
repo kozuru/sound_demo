@@ -15,7 +15,7 @@ body {
 .images{
   /*background-color:#000;*/
   position:relative;
-  left:2.3%;
+  left:2.1%;
   top:190px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -1326,12 +1326,12 @@ animation:rainbow-bg 4s infinite;
 
 /*screen css*/
 #soundpage {
-  width: 120px;
+  width: 130px;
   height: 120px;
   color: #ffffff;
   z-index: 101;
   top: 0;
-  left: 3%;
+  left: 1%;
   position: absolute;
   font-family: "Roboto Mono", monospace;
   background: #000000;
