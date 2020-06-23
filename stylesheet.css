@@ -1588,9 +1588,6 @@ body:not(.safari) #start:hover::after {
   transform:scale(0.8);
  }
 
- .bubble-show{
-   transform: scale(0.6);
- }
  #bubbleGen1{
    position: absolute;
    left:-10%;
@@ -1610,7 +1607,5 @@ body:not(.safari) #start:hover::after {
 .bubble.pop {
   transform: scale(1.0);
 }
-.bubble{
-  z-index:-0.5;
-}
+
 }
