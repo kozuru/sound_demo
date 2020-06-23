@@ -1402,11 +1402,11 @@ animation:rainbow-bg 4s infinite;
 
 #go {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 10px;
+  left: 10px;
   z-index: -1;
-  width:140px;
-  height:140px;
+  /*width:140px;
+  height:140px;*/
 	
 }
 
