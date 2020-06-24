@@ -1640,12 +1640,12 @@ animation:rainbow-bg 4s infinite;
  .bubble-show #bubbleGen1{
    left:10%;
    bottom:0px;
-   transform:scale(1.5);
+   transform:scale(1.1);
  }
  .bubble-show #bubbleGen2{
    left:92%;
    bottom:0px;
-   transform:scale(1.5);
+   transform:scale(1.1);
  }
 
 
