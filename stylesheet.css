@@ -1,4 +1,4 @@
-* {
+ {
   box-sizing: border-box;
 }
 
@@ -23,13 +23,13 @@ body {
   position: absolute;
   font-family: "Roboto Mono", monospace;
   /*background: #000000;*/
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+          flex-direction: column;*/
   text-align: center;
   opacity: 1;
 }
@@ -97,7 +97,7 @@ body {
 }
 
 #canvas {
-  position: fixed;
+  position: absolute;
   left: 35.5%;
   top: 145px;
   width: 28%;
@@ -139,7 +139,7 @@ audio {
 svg {
   width: 90%;
   height: 90%;
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 #overlay .time.pause .pause {
@@ -156,7 +156,12 @@ body:not(.safari) #start {
   padding: 4px 8px;
   /* 	border-radius:4px; */
   position: relative;
-  border: 0.5px #333 solid;
+  animation: blinkAnimeS .5s infinite alternate;
+  border:4.5px solid #eee;
+}
+@keyframes blinkAnimeS{
+ 0%  { border-color: #eee }
+ 100%{ border-color: #e5c100 }
 }
 
 body:not(.safari) #start:hover {
@@ -197,7 +202,7 @@ body:not(.safari) #start:hover::after {
 #overlay .btn {
   position: relative;
   background: #333;
-
+  border-radius:9px ;
   border: #63c3e7 solid 1px;
 }
 #overlay .btn svg .shape {
@@ -216,18 +221,27 @@ body:not(.safari) #start:hover::after {
   transition: 0.25s;
 }
 #overlay .btn:hover::after {
-  top: 3.95px;
-  left: 3.95px;
+  top: 1.95px;
+  left: 1.95px;
 }
 #overlay .btn::after {
   content: "";
   width: 100%;
   height: 100%;
-  top: 4px;
-  left: 4px;
+  top: 2px;
+  left: 2px;
   border: #63c3e7 solid 1px;
+    border-radius: 9px;
   position: absolute;
   z-index: -1;
+}
+#overlay h5{
+  fontsize:9px;
+  color:#fff;
+  position:absolute;
+  top:50px;
+  left:-6%;
+  padding:0;
 }
 
 /**/
@@ -1537,69 +1551,92 @@ animation:rainbow-bg 4s infinite;
   opacity: 0;
 }
 
+/*スマホ*/
 /*responsive*/
 @media(max-width:1000px){
   .images{
-    margin:0;
-    padding:0;
     transform:scale(0.9);
-    left:-42%;
-    top:130px;
+    left:-138%;
+    top:-29px;
+  }
+  #soundpage {
+    transform:scale(0.95);
+  }
+  #overlay {
+    transform:scale(0.9);
   }
   p img {
   top: 300px;
-  left: 97%;
+  left: 329%;
 }
 .disco-ball {
-  margin-top: 15px;
+ margin-top: -185px;
+  margin-left: 300px;
   transform:scale(0.9);
  }
-}
-@media(max-width:670px){
-  .images{
-    margin:0;
-    padding:0;
-    transform:scale(0.8);
-    left:-110.9%;
-    top:160px;
-  }
-  #soundpage {
-    transform:scale(0.8);
-  }
-   p img {
-  top: 298px;
-  left:190%;
-}
- #drag-container img {
-  position: absolute;
-  left: 4%;
-  top: 15px;
-  }
- .disco-ball {
-  margin-top: 8px;
-  transform:scale(0.8);
- }
+ #canvas{
+  left: 34.05%;
+  top: 110px;
 
+ }
 
  #bubbleGen1{
    position: absolute;
    left:-10%;
-   bottom:-600px;
+   bottom:0px;
 
  }
  #bubbleGen2{
    position: absolute;
    left:120%;
-   bottom:-600px;
+   bottom:0px;
 
  }
- #bubbleGen1.dragging,#bubbleGen2.dragging{
-  transform: scale(1.0);
 
 }
-.bubble.pop {
-  transform: scale(1.0);
+@media(max-width:670px){
+  .images{
+    transform:scale(0.8);
+    left:-182.9%;
+    top:0px;
+  }
+  #soundpage {
+    transform:scale(0.8);
+  }
+  #overlay {
+    transform:scale(0.8);
+  }
+   p img {
+  top: 298px;
+  left:330%;
 }
+ /*#drag-container img {
+  position: absolute;
+  left: 4%;
+  top: 15px;
+  }*/
+ .disco-ball {
+  margin-top: -200px;
+  margin-left:150px;
+  transform:scale(0.7);
+ }
+ #canvas{
+  left: 26%;
+  top: 100px;
+  width: 60%;
+  height: 28%;
+ }
+
+ .bubble-show #bubbleGen1{
+   left:40%;
+   bottom:0px;
+ }
+ .bubble-show #bubbleGen2{
+   left:92%;
+   bottom:0px;
+
+ }
+
 
 
 }
