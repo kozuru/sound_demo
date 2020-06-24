@@ -264,7 +264,7 @@ body:not(.safari) #start:hover::after {
   /*background-color:#000;*/
   position:relative;
   left:4.05%;
-  top:30px;
+  top:90px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
