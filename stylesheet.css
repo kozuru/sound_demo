@@ -1532,7 +1532,7 @@ animation:rainbow-bg 4s infinite;
   bottom: 5px;
 }
 #bubbleGen1.dragging,#bubbleGen2.dragging{
-  transform: scale(1.5);
+  transform: scale(1.6);
 }
 
 .bubble {
@@ -1545,7 +1545,7 @@ animation:rainbow-bg 4s infinite;
 }
 
 .bubble.pop {
-  transform: scale(1.5);
+  transform: scale(1.6);
   border: 8px solid dodgerblue;
   background-color: transparent;
   opacity: 0;
@@ -1628,13 +1628,14 @@ animation:rainbow-bg 4s infinite;
  }
 
  .bubble-show #bubbleGen1{
-   left:40%;
+   left:10%;
    bottom:0px;
+   transform:scale(1.5);
  }
  .bubble-show #bubbleGen2{
    left:92%;
    bottom:0px;
-
+   transform:scale(1.5);
  }
 
 
