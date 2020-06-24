@@ -245,8 +245,8 @@ body:not(.safari) #start:hover::after {
   position: absolute;
   z-index: -1;
 }
-#overlay h5{
-  fontsize:7px;
+#overlay h6{
+  fontsize:6px;
   color:#fff;
   position:absolute;
   top:50px;
