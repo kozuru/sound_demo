@@ -95,14 +95,24 @@ body {
   background:#000;
   z-index: -1;
 }
-
 #canvas {
   position: absolute;
   left: 35.5%;
   top: 145px;
   width: 28%;
   height: 28%;
-  border: 3px solid #fffddd;
+  animation: blinkAnimeS1 2s infinite alternate;
+  border:4.5px solid #fffddd;
+
+}
+@keyframes blinkAnimeS1{
+ 0%  { border-color: #fffddd }
+ 25% { border-color: #333}
+ 50% { border-color:#00bfff;}
+ 75% ( border-color:#333;)
+ 89.9% { border-color: #e5c100;}
+
+ 100%{ border-color: #fffddd ;}
 }
 
 /* audio {
