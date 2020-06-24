@@ -264,16 +264,19 @@ body:not(.safari) #start:hover::after {
   /*background-color:#000;*/
   position:relative;
   left:4.05%;
-  top:30px;
+  top:50px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
- #images img:hover{
-  -webkit-box-shadow: 0 0 15px #fffd;
-          box-shadow: 0 0 15px #fffd;
+ .a,.b,.c,.d,.e,.f,.g,.h{
+
   -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
 }
-
+#images img:hover{
+ -webkit-box-shadow: 0 0 13px #fffd;
+         box-shadow: 0 0 13px #fffd;
+ /*-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);*/
+}
 .a {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
@@ -1052,12 +1055,13 @@ body:not(.safari) #start:hover::after {
   /*font-family: Serif;
   font-size:30px;*/
   position: absolute;
-  top: 345px;
+  top: 350px;
   left: 329.4%;
   width:90px;
   height:auto;
-  -webkit-transform: translate(-50%,-50%) rotateX(70deg);
-          transform: translate(-50%,-50%) rotateX(70deg);
+  background-size:cover;
+  -webkit-transform: translate(-50%,-50%) rotateX(68deg);
+          transform: translate(-50%,-50%) rotateX(68deg);
   color: #ff0000;
   z-index:-50;
 }
