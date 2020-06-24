@@ -264,7 +264,7 @@ body:not(.safari) #start:hover::after {
   /*background-color:#000;*/
   position:relative;
   left:4.05%;
-  top:90px;
+  top:50px;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
@@ -1659,7 +1659,5 @@ animation:rainbow-bg 4s infinite;
    bottom:0px;
 
  }
-
-
 
 }
