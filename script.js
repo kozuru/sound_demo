@@ -229,7 +229,6 @@ const start = document.querySelector("#start");
 const soundpage = document.querySelector("#soundpage");
 
 /*let safari = false;
-
 if (navigator.vendor.toLowerCase().includes("apple")) {
 	audio.hidden = false;
 	document.body.classList.add("safari");
