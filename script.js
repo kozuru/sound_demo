@@ -381,7 +381,7 @@ class Circle {
 		drawCircle(
 			Math.round(this.x),
 			Math.round(this.y),
-			this.value * 0.175,/*球体のサイズ*/
+			this.value * 0.18,/*球体のサイズ*/
       //this.value * 0.1,
 			this.rgb
 		);
